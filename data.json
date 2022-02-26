@@ -118,5 +118,26 @@
         "previous": 11
       }
     }
+  },
+  {
+    "title": "Self Care",
+    "image": "images/icon-self-care.svg",
+    "background" : "hsl(43, 84%, 65%)",
+    "alt": "self-care",
+    "timeframes": {
+      "daily": {
+        "current": 0,
+        "previous": 1
+      },
+      "weekly": {
+        "current": 2,
+        "previous": 2
+      },
+      "monthly": {
+        "current": 7,
+        "previous": 11
+      }
+    }
   }
+
 ]

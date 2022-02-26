@@ -55,13 +55,13 @@ async function getData() {
         subCardContainer.append(subCardBack);
         
         // modifying the variables
-
+        subCardBack.style.backgroundColor = data[i].background;
         stuff.innerText = data[i].title;
         backLogo.src = data[i].image;
-        backLogo.alt = 'work';
+        backLogo.alt = data[i].alt;
         menuLogo.src = 'images/icon-ellipsis.svg';
-        duration.innerText = '32hrs';
-        history.innerText = 'Last Week - 36hrs';
+        duration.innerText = `${data[i].timeframes['weekly'].current}hrs`;
+        history.innerText = `Last Week - ${data[i].timeframes['weekly'].previous}`;
         
     }
     
