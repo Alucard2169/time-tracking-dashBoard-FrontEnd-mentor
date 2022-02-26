@@ -23,7 +23,7 @@ daily.addEventListener('click', () => {
 let data; 
 
 async function getData() {
-    let res = await fetch('https://raw.githubusercontent.com/Alucard2169/time-tracking-dashBoard-FrontEnd-mentor/main/data.json')
+    let res = await fetch('https://github.com/Alucard2169/time-tracking-dashBoard-FrontEnd-mentor/blob/main/data.json')
 
     data = await res.json();
     console.log(data)
