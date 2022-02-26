@@ -1,10 +1,20 @@
 // defining variables
 
 const subCardContainer = document.querySelector('.container');
+const monthly = document.querySelector('#month');
+const daily = document.querySelector('#daily');
+const weekly = document.querySelector('#weekly')
 
+let mode = 'week';
+console.log(mode)
 
-
-let mode = 'weekly';
+monthly.addEventListener('click', () => {
+    mode = 'month';
+    console.log(mode)
+})
+daily.addEventListener('click', () => {
+    mode = 'daily';
+})
 
 
 
@@ -60,8 +70,20 @@ async function getData() {
         backLogo.src = data[i].image;
         backLogo.alt = data[i].alt;
         menuLogo.src = 'images/icon-ellipsis.svg';
-        duration.innerText = `${data[i].timeframes['weekly'].current}hrs`;
-        history.innerText = `Last Week - ${data[i].timeframes['weekly'].previous}`;
+
+        if (mode === 'daily') {
+            duration.innerText = `${data[i].timeframes['daily'].current}hrs`;
+            history.innerText = `Last Day - ${data[i].timeframes['daily'].previous}`;
+        }
+        else if (mode === 'month') {
+            duration.innerText = `${data[i].timeframes['monthly'].current}hrs`;
+            history.innerText = `Last Month - ${data[i].timeframes['monthly'].previous}`;
+        }
+        else {
+            duration.innerText = `${data[i].timeframes['weekly'].current}hrs`;
+            history.innerText = `Last Week - ${data[i].timeframes['weekly'].previous}`;
+        }
+        
         
     }
     
