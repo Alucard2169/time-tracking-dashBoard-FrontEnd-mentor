@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+$card-background: hsl(235, 46%, 20%);
+$neutral: hsl(236, 100%, 87%);
+
+body {
+    background: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    border-radius: 15px;
+}
+
+.container {
+    margin: 4rem 0;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 2rem;
+
+    .main-card {
+        background: $card-background;
+        display: flex;
+        flex-direction: column;
+
+        .info-card {
+            padding: 2rem 1.5rem;
+            background: hsl(246, 80%, 60%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.2rem;
+
+            .image {
+                width: 25%;
+
+                .pfp {
+                    width: 100%;
+                    border-radius: 50%;
+                    border: 3px white solid;
+                }
+            }
+
+            .info {
+
+                .topic,
+                .name {
+                    font-weight: 300;
+                }
+
+                .topic {
+                    color: $neutral;
+                    font-size: .9rem;
+                    margin-bottom: .3rem;
+                }
+
+                .name {
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .mode {
+            display: flex;
+            justify-content: space-around;
+            color: $neutral;
+            margin: 2rem 0;
+            font-size: 1.1rem;
+
+            button {
+                border: none;
+                background: none;
+                font-size: 1.1rem;
+                color: $neutral;
+            }
+
+            button:hover:focus {
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+
+
+    // sub card design
+
+    .subBack {
+        background: hsl(15, 100%, 70%);
+        height: 85%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        z-index: -2;
+
+        .loGo {
+            position: absolute;
+            right: 20px;
+            top: -8px;
+            z-index: -1;
+        }
+
+        .sub-card {
+            background: $card-background;
+            margin-top: auto;
+            height: 9rem;
+            padding: 2rem 1.5rem;
+
+            .upper {
+                color: white;
+                display: flex;
+                align-items: center;
+                font-size: 1.2rem;
+                font-weight: 400;
+
+                .logo {
+                    margin-left: auto;
+                }
+            }
+
+            .lower {
+                display: flex;
+                align-items: baseline;
+                margin-top: 1rem;
+
+                .duration {
+                    font-weight: 300;
+                    color: white;
+                    font-size: 2rem;
+                }
+
+                .history {
+                    margin-left: auto;
+                    color: $neutral;
+                }
+
+            }
+        }
+
+    }
+}

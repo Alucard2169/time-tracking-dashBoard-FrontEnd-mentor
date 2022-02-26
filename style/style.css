@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background: #0f1424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div {
+  border-radius: 15px;
+}
+
+.container {
+  margin: 4rem 0;
+  width: 85%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+  gap: 2rem;
+}
+
+.container .main-card {
+  background: #1c1f4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .main-card .info-card {
+  padding: 2rem 1.5rem;
+  background: #5847eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+}
+
+.container .main-card .info-card .image {
+  width: 25%;
+}
+
+.container .main-card .info-card .image .pfp {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px white solid;
+}
+
+.container .main-card .info-card .info .topic,
+.container .main-card .info-card .info .name {
+  font-weight: 300;
+}
+
+.container .main-card .info-card .info .topic {
+  color: #bdc1ff;
+  font-size: .9rem;
+  margin-bottom: .3rem;
+}
+
+.container .main-card .info-card .info .name {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.container .main-card .mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #bdc1ff;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.container .main-card .mode button {
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+  color: #bdc1ff;
+}
+
+.container .main-card .mode button:hover:focus {
+  color: white;
+  cursor: pointer;
+}
+
+.container .subBack {
+  background: #ff8c66;
+  height: 85%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: -2;
+}
+
+.container .subBack .loGo {
+  position: absolute;
+  right: 20px;
+  top: -8px;
+  z-index: -1;
+}
+
+.container .subBack .sub-card {
+  background: #1c1f4a;
+  margin-top: auto;
+  height: 9rem;
+  padding: 2rem 1.5rem;
+}
+
+.container .subBack .sub-card .upper {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.container .subBack .sub-card .upper .logo {
+  margin-left: auto;
+}
+
+.container .subBack .sub-card .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: 1rem;
+}
+
+.container .subBack .sub-card .lower .duration {
+  font-weight: 300;
+  color: white;
+  font-size: 2rem;
+}
+
+.container .subBack .sub-card .lower .history {
+  margin-left: auto;
+  color: #bdc1ff;
+}
+/*# sourceMappingURL=style.css.map */
