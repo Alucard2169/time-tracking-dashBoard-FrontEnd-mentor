@@ -1,19 +1,32 @@
 // defining variables
 
-const subCardContainer = document.querySelector('.container');
+const subCardContainer = document.querySelector('.sub-card-container');
+
 const monthly = document.querySelector('#month');
 const daily = document.querySelector('#daily');
 const weekly = document.querySelector('#weekly')
 
-let mode = 'week';
-console.log(mode)
+let mode = 'week'
 
 monthly.addEventListener('click', () => {
+    if (mode === 'month') return;
     mode = 'month';
-    console.log(mode)
+    subCardContainer.innerHTML = null;
+    getData();
+
 })
 daily.addEventListener('click', () => {
-    mode = 'daily';
+    if (mode == 'daily') return;
+    mode = 'daily'
+    subCardContainer.innerHTML = null;
+    getData();
+})
+
+weekly.addEventListener('click', () => {
+    if (mode == 'week') return;
+    mode = 'week'
+    subCardContainer.innerHTML = null;
+    getData();
 })
 
 
@@ -25,9 +38,8 @@ let data;
 async function getData() {
     let res = await fetch('https://raw.githubusercontent.com/Alucard2169/time-tracking-dashBoard-FrontEnd-mentor/main/data.json')
 
-    data = await res.json();
-    console.log(data)
-    
+    let data = await res.json();
+
     for (let i = 0; i < data.length; i++){
 
         //create data elements
