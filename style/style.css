@@ -183,4 +183,89 @@ div {
   margin-left: auto;
   color: #bdc1ff;
 }
+
+@media only screen and (min-width: 700px) {
+  body {
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .container .main-card {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/span 2;
+  }
+  .container .main-card .info-card {
+    padding-bottom: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .container .main-card .info-card .image {
+    width: 6.5rem;
+  }
+  .container .main-card .info-card .info .name {
+    font-weight: 200;
+    font-size: 2rem;
+  }
+  .container .main-card .mode {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 2rem;
+    padding-left: 1.5rem;
+  }
+  .container .sub-card-container {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-column: 2/span 4;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .container .sub-card-container .subBack {
+    height: auto;
+  }
+  .container .sub-card-container .subBack .sub-card {
+    height: 12.5rem;
+  }
+  .container .sub-card-container .subBack .sub-card .lower {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: none;
+    margin-top: 1rem;
+  }
+  .container .sub-card-container .subBack .sub-card .lower .duration {
+    font-size: 3.5rem;
+  }
+  .container .sub-card-container .subBack .sub-card .lower .history {
+    margin-top: 5rem;
+    position: absolute;
+  }
+}
 /*# sourceMappingURL=style.css.map */
