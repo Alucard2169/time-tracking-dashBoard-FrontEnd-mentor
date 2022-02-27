@@ -82,6 +82,7 @@ async function getData() {
         backLogo.src = data[i].image;
         backLogo.alt = data[i].alt;
         menuLogo.src = 'images/icon-ellipsis.svg';
+        menuLogo.alt = 'menu';
 
         if (mode === 'daily') {
             duration.innerText = `${data[i].timeframes['daily'].current}hrs`;
@@ -101,6 +102,7 @@ async function getData() {
     
 
 }
+
 getData();
 
 
