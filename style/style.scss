@@ -122,6 +122,11 @@ div {
                 margin-top: auto;
                 height: 9rem;
                 padding: 2rem 1.5rem;
+                cursor: pointer;
+
+                &:hover {
+                    background: #34397B;
+                }
 
                 .upper {
                     color: white;
@@ -159,9 +164,7 @@ div {
 }
 
 
-<<<<<<< HEAD
-
-@media only screen and (min-width: 700px) {
+<<<<<<< HEAD @media only screen and (min-width: 700px) {
     body {
         height: 100vh;
         align-items: center;
@@ -236,6 +239,7 @@ div {
         }
     }
 }
-=======
-@media only screen and (min-width: 700px) {}
->>>>>>> bfdc847fa5a836e0c4677e01b02455d027010062
+
+=======@media only screen and (min-width: 700px) {}
+
+>>>>>>>bfdc847fa5a836e0c4677e01b02455d027010062

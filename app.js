@@ -47,7 +47,7 @@ async function getData() {
         const subCardBack = document.createElement('div');
         const backLogo = document.createElement('img');
         const subCard = document.createElement('div');
-        const subCardUpperSection = document.createElement('section');
+        const subCardUpperSection = document.createElement('div');
         const stuff = document.createElement('span');
         const menuLogo = document.createElement('img');
         const subCardLowerSection = document.createElement('div');
@@ -82,6 +82,7 @@ async function getData() {
         backLogo.src = data[i].image;
         backLogo.alt = data[i].alt;
         menuLogo.src = 'images/icon-ellipsis.svg';
+        menuLogo.alt = 'menu';
 
         if (mode === 'daily') {
             duration.innerText = `${data[i].timeframes['daily'].current}hrs`;
@@ -101,6 +102,7 @@ async function getData() {
     
 
 }
+
 getData();
 
 
