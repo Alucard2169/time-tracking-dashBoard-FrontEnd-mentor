@@ -103,7 +103,7 @@ div {
   color: #bdc1ff;
 }
 
-.container .main-card .mode button:hover:focus {
+.container .main-card .mode button:hover {
   color: white;
   cursor: pointer;
 }
