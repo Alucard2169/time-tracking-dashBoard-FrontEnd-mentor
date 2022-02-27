@@ -146,6 +146,10 @@ div {
   height: 9rem;
   padding: 2rem 1.5rem;
 }
+.container .sub-card-container .subBack .sub-card:hover {
+  background: #34397B;
+  cursor: pointer;
+}
 
 .container .sub-card-container .subBack .sub-card .upper {
   color: white;
